@@ -1,0 +1,46 @@
+# ----------------------------------------------------------------------
+# 1. Project-Specific Exclusions (Essential for your app)
+# ----------------------------------------------------------------------
+
+# Ignore all CSV files in the root directory and all subdirectories
+# This is crucial to keep your repo small.
+*.csv
+*/past_data/
+
+# If you decide to include a few specific CSV files (like small samples),
+# you can use an exception (whitelist them) by putting ! in front of the file name:
+# !small_sample_data.csv
+
+# ----------------------------------------------------------------------
+# 2. Python Environment and Cache Files
+# ----------------------------------------------------------------------
+
+# Virtual environment directory (common names)
+venv/
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Pip / installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ----------------------------------------------------------------------
+# 3. Streamlit / Dashboard Files
+# ----------------------------------------------------------------------
+
+# Streamlit-specific configuration/secrets files (should NOT be committed)
+.streamlit/
+
+# ----------------------------------------------------------------------
+# 4. Operating System and Editor Files (macOS, VS Code, etc.)
+# ----------------------------------------------------------------------
+
+# macOS system files
+.DS_Store
+
+# Common editor files (adjust for what you use)
+.vscode/ # VS Code workspace/settings
+.idea/   # PyCharm/IntelliJ
